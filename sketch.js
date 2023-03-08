@@ -4,7 +4,7 @@ function setup(params) {
   createCanvas(400,400)
 
 
-for(let i = 0 ; i < 100 ; i++){
+for(let i = 0 ; i < 200 ; i++){
   bubbles[i] =  {
     x : random(0,width),
     y : random(0,height),
@@ -12,7 +12,6 @@ for(let i = 0 ; i < 100 ; i++){
     
     clicked: function mousePressed(params) {
       this.col = color(random(0,255),random(0,255),random(0,255))
-    
   },
 
     display : function name(params) {
@@ -34,7 +33,7 @@ for(let i = 0 ; i < 100 ; i++){
 
 function draw(){
    background(0);
-   for(let i = 0;i < bubbles.length; i++){
+   for(let i = 0; i < bubbles.length; i++){
    bubbles[i].display();
    bubbles[i].move();
    }
@@ -45,8 +44,3 @@ function draw(){
       bubbles[i].clicked();
     }
   }
-
-  
-
-  
-

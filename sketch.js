@@ -4,7 +4,7 @@ function setup(params) {
   createCanvas(400,400)
 
 
-for(let i = 0 ; i < 200 ; i++){
+for(let i = 0 ; i < 2200 ; i++){
   bubbles[i] =  {
     x : random(0,width),
     y : random(0,height),
